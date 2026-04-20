@@ -1,0 +1,34 @@
+{
+  "python.defaultInterpreterPath": "${workspaceFolder}/venv/Scripts/python.exe",
+  "python.languageServer": "Pylance",
+  "python.analysis.typeCheckingMode": "off",
+  "python.analysis.diagnosticMode": "off",
+  "python.analysis.diagnosticSeverityOverrides": {
+    "reportMissingImports": "none",
+    "reportMissingModuleSource": "none",
+    "reportUndefinedVariable": "none",
+    "reportGeneralTypeIssues": "none",
+    "reportAttributeAccessIssue": "none",
+    "reportIndexIssue": "none",
+    "reportOperatorIssue": "none",
+    "reportReturnType": "none",
+    "reportArgumentType": "none",
+    "reportCallIssue": "none"
+  },
+  "python.analysis.extraPaths": [
+    "${workspaceFolder}/venv/Lib/site-packages"
+  ],
+  "python.linting.enabled": false,
+  "python.linting.pylintEnabled": false,
+  "python.linting.pyreEnabled": false,
+  "python.linting.flake8Enabled": false,
+  "python.linting.mypyEnabled": false,
+  "python.linting.pycodestyleEnabled": false,
+  "python.linting.pydocstyleEnabled": false,
+  "python.linting.banditEnabled": false,
+  "python.analysis.ignore": ["**/*"],
+  "blackbox.analysis.enabled": false,
+  "[python]": {
+    "editor.defaultFormatter": null
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "source_directories": ["."],
+  "search_path": ["D:\\swasthya-setu\\swasthya-setu\\venv\\Lib\\site-packages"],
+  "exclude": [
+    ".*/venv/.*",
+    ".*/node_modules/.*",
+    ".*/api/.*"
+  ]
+}
