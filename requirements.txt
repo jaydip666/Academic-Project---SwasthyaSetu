@@ -18,7 +18,7 @@ asgiref
 cryptography
 PyJWT==2.1.0
 pypdf
-reportlab
+reportlab==3.6.12
 xhtml2pdf==0.2.5
 arabic-reshaper
 python-bidi
