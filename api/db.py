@@ -4,17 +4,21 @@
 # Purpose: Direct MongoDB connection and collection references
 # Handles: Low-level database access via PyMongo
 
+import os
 from pymongo import MongoClient
 
+# Use Environment Variable for Vercel, fallback to local for development
+MONGODB_URI = os.environ.get('MONGODB_URI', 'mongodb://127.0.0.1:27017/')
+
 try:
-    # Using 127.0.0.1 for better compatibility on Windows/macOS and adding timeout
-    client = MongoClient('mongodb://127.0.0.1:27017/', serverSelectionTimeoutMS=5000)
+    # Set serverSelectionTimeoutMS for quick failure if DB is down
+    client = MongoClient(MONGODB_URI, serverSelectionTimeoutMS=5000)
     # Ping the server to verify connection
     client.admin.command('ping')
 except Exception as e:
     print(f"CRITICAL ERROR: Could not connect to MongoDB: {e}")
-    # Fallback/Dummy client for static analysis consistency if needed
-    client = MongoClient('mongodb://127.0.0.1:27017/', connect=False)
+    # Fallback to avoid crashing the whole server during startup
+    client = MongoClient(MONGODB_URI, connect=False)
 
 db = client['swasthya_setu']
 
