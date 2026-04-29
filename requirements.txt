@@ -22,7 +22,6 @@ reportlab
 xhtml2pdf
 arabic-reshaper
 python-bidi
-svglib
 cssselect2
 html5lib
 tinycss2
