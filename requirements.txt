@@ -23,7 +23,6 @@ xhtml2pdf
 arabic-reshaper
 python-bidi
 svglib
-rlPyCairo
 cssselect2
 html5lib
 tinycss2
@@ -45,6 +44,6 @@ pyHanko
 pyhanko-certvalidator
 PyYAML
 freetype-py
-pycairo
 setuptools
 six
+
