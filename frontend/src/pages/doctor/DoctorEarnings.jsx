@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { api } from '../../services/api';
+import { api, API_BASE_URL } from '../../services/api';
 import {
     TrendingUp, Calendar, Clock, User,
     ArrowUpRight, Download, BarChart2, Activity,
@@ -32,7 +32,7 @@ const DoctorEarnings = () => {
 
     const handleExportPdf = () => {
         const query = patientFilter ? `?patient=${encodeURIComponent(patientFilter)}` : '';
-        window.open(`${window.location.protocol}//${window.location.hostname}:8000/api/doctor/earnings/pdf/${query}`, '_blank');
+        window.open(`${API_BASE_URL}/doctor/earnings/pdf/${query}`, '_blank');
     };
 
     if (loading) {

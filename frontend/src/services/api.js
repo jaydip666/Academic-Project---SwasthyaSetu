@@ -2,8 +2,8 @@
 // File: api.js
 // Purpose: Main API service client for frontend-backend communication
 // Handles: Fetch requests (GET, POST, PUT, DELETE), media URL generation, and error handling
-const API_BASE_URL = `${window.location.protocol}//${window.location.hostname}:8000/api`;
-const BACKEND_URL = `${window.location.protocol}//${window.location.hostname}:8000`;
+export const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || `${window.location.protocol}//${window.location.hostname}:8000`;
+export const API_BASE_URL = `${BACKEND_URL}/api`;
 
 const getErrorMessage = (result, response, prefix) => {
     return result.error || result.detail || (Object.keys(result).length > 0 ? JSON.stringify(result) : null) || `${prefix}: ${response.status}`;

@@ -18,7 +18,13 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 
+from django.http import HttpResponse
+
+def home(request):
+    return HttpResponse("<h1>Swasthya Setu Backend is Running</h1><p>The API is available at <a href='/api/'>/api/</a></p>")
+
 urlpatterns = [
+    path('', home, name='home'),
     path('admin/', admin.site.urls),
     path('api/', include('api.urls')),
 ]
