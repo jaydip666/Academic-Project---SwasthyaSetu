@@ -19,9 +19,10 @@ cryptography
 PyJWT==2.1.0
 pypdf
 reportlab==4.0.4
-xhtml2pdf==0.2.10
+xhtml2pdf==0.2.16
 arabic-reshaper
 python-bidi
+svglib==1.5.1
 cssselect2
 html5lib
 tinycss2
