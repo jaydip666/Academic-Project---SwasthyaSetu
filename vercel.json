@@ -22,7 +22,7 @@
     },
     {
       "src": "/media/(.*)",
-      "dest": "backend/wsgi.py"
+      "dest": "/media/$1"
     },
     {
       "handle": "filesystem"

@@ -1,0 +1,68 @@
+[{
+  "_id": {
+    "$oid": "69a542c15f7199b8a471daa7"
+  },
+  "hospital_id": {
+    "$numberLong": "1772438209423"
+  },
+  "name": "Apollo Hospital",
+  "location": "Ahmedabad ",
+  "address": "Plot No. 1A, Bhat GIDC Estate, Airport Gandhinagar Road, Dist. Gandhinagar, Ahmedabad, Gujarat, 382428.",
+  "contact": "+91-8401801066",
+  "image_url": "/media/hospitals/hospital_20260407_082844_Screenshot_2026-04-04_233959.png",
+  "specialties": [],
+  "created_at": {
+    "$date": "2026-03-02T13:26:49.423Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69a543375f7199b8a471daa8"
+  },
+  "hospital_id": {
+    "$numberLong": "1772438327861"
+  },
+  "name": "Shelby Hospital ",
+  "location": "Ahmedabad ",
+  "address": "Opp. Karnavati Club, S G Road, Ahmedabad – 380015, Gujarat, India",
+  "contact": "+91 7069001001",
+  "image_url": "/media/hospitals/hospital_20260407_082858_Screenshot_2026-04-04_234116.png",
+  "specialties": [],
+  "created_at": {
+    "$date": "2026-03-02T13:28:47.861Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69a546125f7199b8a471daab"
+  },
+  "hospital_id": {
+    "$numberLong": "1772439058522"
+  },
+  "name": "Zydus Hospital - Vadodara ",
+  "location": "Vadodara,Gujarat ",
+  "address": "Nr. Akshar Chowk, Old Padra Road,Vadodara, Gujarat 390020",
+  "contact": "+91 265 67 20 000",
+  "image_url": "/media/hospitals/hospital_20260407_082909_Screenshot_2026-04-04_234331.png",
+  "specialties": [],
+  "created_at": {
+    "$date": "2026-03-02T13:40:58.522Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69a5472e5f7199b8a471daac"
+  },
+  "hospital_id": {
+    "$numberLong": "1772439342477"
+  },
+  "name": "Sanjivani Hospital",
+  "location": "Surat",
+  "address": "C-210-226, 2ND FLOOR, WESTERN BUSINESS PARK, OPP. S. D. JAIN SCHOOL, UDHNA MAGADALLA ROAD, SURAT, GUJARAT, SURAT , Pin 395007",
+  "contact": "7874285777",
+  "image_url": "/media/hospitals/hospital_20260407_082926_Screenshot_2026-04-04_234422.png",
+  "specialties": [],
+  "created_at": {
+    "$date": "2026-03-02T13:45:42.477Z"
+  }
+}]
